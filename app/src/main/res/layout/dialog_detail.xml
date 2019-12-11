@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/shape"
+    tools:context="uchan.weather.MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:id="@+id/tableLayout"
+        android:background="@drawable/dialog_bg">
+
+        <TextView
+            android:id="@+id/LOCAL"
+            android:background="#5b9bd5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="text"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d2deef">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="등급" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="환경지수"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="이산화질소"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="오존"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eaeff7">
+
+            <TextView
+                android:id="@+id/GRADE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:text="test1"/>
+
+            <TextView
+                android:id="@+id/maxIndex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:text="test2"/>
+
+            <TextView
+                android:id="@+id/NITROGEN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:text="test3"/>
+
+            <TextView
+                android:id="@+id/OZONE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:text="test4"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d2deef">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="일산화질소"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="아황산가스"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="미세먼지"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:text="초미세먼지"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#eaeff7">
+
+            <TextView
+                android:id="@+id/CARBON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:text="test5"/>
+
+            <TextView
+                android:id="@+id/SULFUROUS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:text="test6"/>
+
+            <TextView
+                android:id="@+id/PM10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:text="test7"/>
+
+            <TextView
+                android:id="@+id/PM25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="#00000000"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/black"
+                android:text="test8"/>
+        </TableRow>
+    </TableLayout>
+
+    <kr.go.seoul.culturalevents.CulturalEventTypeMini
+        android:id="@+id/type_mini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout"/>
+
+    <Button
+        android:id="@+id/buttonClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="닫기"
+        android:textSize="16dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/type_mini" />
+</RelativeLayout>

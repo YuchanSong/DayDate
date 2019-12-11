@@ -1,0 +1,102 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textviewLogo"
+        android:layout_width="221dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="출처 : 환경부"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/st1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/st1"
+        android:layout_below="@id/textviewLogo"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/st2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/st2"
+        android:layout_below="@id/st1"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/st2"
+        android:text=" 현재 앱에서 보고 계신 수치는 실시간 관측된 자료이며 측정소 현지 사정이나 서울시 공공 데이터의 수신 상태에 따라 데이터가 기록되지 않을 수 있습니다."
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18dp"/>
+
+    <ImageView
+        android:id="@+id/st3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/st3"
+        android:layout_below="@id/text"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/st3"
+        android:text=" 국내 표준인 한국환경 공단 에어코리아 기준으로 위와 같은 4가지 단계를 사용합니다."
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18dp"/>
+
+    <ImageView
+        android:id="@+id/st4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/st4"
+        android:layout_below="@id/text2"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/st4"
+        android:text=" 대기 상태가 안 좋을 때는 위와 같은 행동 수칙을 실천할 수 있도록 합니다!"
+        android:textColor="#000"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/buttonCancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text3"
+        android:background="@drawable/button"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="돌아가기"/>
+
+</RelativeLayout>
+</ScrollView>

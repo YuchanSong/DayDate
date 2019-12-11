@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="기본설정"
+        android:textColor="#002454">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="useUserNickname"
+            android:summaryOff="닉네임을 사용하지 않습니다"
+            android:summaryOn="닉네임을 사용합니다"
+            android:textColor="#577777"
+            android:title="닉네임 사용" />
+
+        <EditTextPreference
+            android:dependency="useUserNickname"
+            android:key="nickname"
+            android:maxLines="1"
+            android:maxLength="6"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:title="닉네임 설정" />
+
+        <ListPreference
+            android:entries="@array/array_local"
+            android:entryValues="@array/array_local_values"
+            android:key="localnm"
+            android:summary="강남구"
+            android:textColor="#000"
+            android:title="즐겨찾기"/>
+
+        <SwitchPreference
+            android:key="alarm"
+            android:title="알람"
+            android:summary="매일 오전 7시에 알람을 드려요!"/>
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
